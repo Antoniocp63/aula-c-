@@ -3,7 +3,7 @@
 
 int main() {
    int i, numero, soma;
-   for (i = 1; i <= 5; i++) {
+   for (i = 1; i < 5; i++) {
        scanf("%d" , &numero);
        if (numero > 0){
            soma = soma + numero;
