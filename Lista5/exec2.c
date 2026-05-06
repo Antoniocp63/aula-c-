@@ -1,22 +1,27 @@
-// Online C compiler to run C program online
 #include <stdio.h>
 
 int main() {
     float meta, valorMes, total = 0;
     int mesesValidos = 0;
     
-    printf("Digite a meta da economia");
+    printf("Digite a meta da economia: ");
     scanf("%f", &meta);
     
-    // implemente aqui um WHILE
-    // Enquanto total < meta:
-    // Leia valorMes.
-    // Se valorMes > 0, some ao total e incremente mesesValidos.
-    // Senao, exiba: VALOR DESCONSIDERADO.
     
+    while (total < meta) {
+        printf("Digite o valor economizado no mes: ");
+        scanf("%f", &valorMes);
+        
+        if (valorMes > 0) {
+            total += valorMes;
+            mesesValidos++;
+        } else {
+            printf("VALOR DESCONSIDERADO.\n");
+        }
+    }
     
-    printf("Total economizado: %.2f", total);
-    printf("Meses validos: %d", mesesValidos);
+    printf("Total economizado: %.2f\n", total);
+    printf("Meses validos: %d\n", mesesValidos);
 
     return 0;
 }
