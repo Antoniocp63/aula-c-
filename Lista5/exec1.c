@@ -4,13 +4,13 @@ int main() {
     int i, codigo;
     int validos = 0, invalidos = 0;
 
-    // lê exatamente 10 códigos
+    
     for(i = 1; i <= 10; i++) {
 
         printf("Digite o codigo %d: ", i);
         scanf("%d", &codigo);
 
-        // verifica se o código é válido
+       
         if(codigo >= 1000 && codigo <= 9999) {
             validos++;
         } else {
