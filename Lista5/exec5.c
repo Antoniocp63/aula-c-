@@ -1,4 +1,3 @@
-// Online C compiler to run C program online
 #include <stdio.h>
 
 int main() {
@@ -7,12 +6,13 @@ int main() {
     printf("Digite o codigo de acesso: ");
     scanf("%d", &codigo);
     
-    // Implemente aqui um WHILE
-    // Enquanto codigo ! = 4321:
-    // exiba CODIGO INCORRETOR.
-    // leia codigo novamente.
+    while (codigo != 4321) {
+        printf("CODIGO INCORRETO\n");
+        printf("Digite o codigo de acesso: ");
+        scanf("%d", &codigo);
+    }
     
-    printf("ACESSO LIBERADO");
+    printf("ACESSO LIBERADO\n");
 
     return 0;
 }

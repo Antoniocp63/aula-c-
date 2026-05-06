@@ -7,7 +7,6 @@ int main() {
     printf("Digite a meta da economia: ");
     scanf("%f", &meta);
     
-    
     while (total < meta) {
         printf("Digite o valor economizado no mes: ");
         scanf("%f", &valorMes);

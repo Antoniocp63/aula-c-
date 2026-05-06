@@ -4,7 +4,6 @@ int main() {
     int i, codigo;
     int validos = 0, invalidos = 0;
 
-    
     for(i = 1; i <= 10; i++) {
 
         printf("Digite o codigo %d: ", i);
