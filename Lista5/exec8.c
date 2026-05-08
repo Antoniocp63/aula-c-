@@ -1,22 +1,34 @@
-// Online C compiler to run C program online
 #include <stdio.h>
 
 int main() {
-    float orcamento, produto, total = 0
-    int quantidadeProdutos = 0);
-    
-    printf("Digite Orcamento: ");
+
+    float orcamento, produto, total = 0;
+    int quantidadeProdutos = 0;
+
+    printf("Digite o orçamento: ");
     scanf("%f", &orcamento);
-    
-    // Implemente aqui um WHILE
-    // Enquanto total <= orcamento:
-    // Leia prouto.
-    // Se total > 0, some o total e conte
-    // Se total > orcamento, exiba ORCAMENTO ULTRAPASSADO
-    // Caso produto <= 0, exiba VALOR INVALIDO.
-    
-    printf("TOtal da compra: %2.f", total);
-    printf("Produtos validos: %d", quantidadeProdutos);
+
+    while (total <= orcamento) {
+
+        printf("Digite o valor do produto: ");
+        scanf("%f", &produto);
+
+        if (produto <= 0) {
+            printf("VALOR INVALIDO\n");
+        } else {
+
+            total += produto;
+            quantidadeProdutos++;
+
+            if (total > orcamento) {
+                printf("ORCAMENTO ULTRAPASSADO\n");
+                break;
+            }
+        }
+    }
+
+    printf("\nTotal da compra: %.2f\n", total);
+    printf("Produtos validos: %d\n", quantidadeProdutos);
 
     return 0;
 }

@@ -1,22 +1,33 @@
-// Online C compiler to run C program online
 #include <stdio.h>
 
 int main() {
+
     int nota, continuar;
-    int quantidade = 0, soma = 0
-    float media,
-    
-    // Implemente aqui um DO WHILE.
-    // Leia nota.
-    // Se nota >= 1 E nota <= 5, some e conte.
-    // Seao, exiba NOTA INVALIDA
-    // Pergunte se deseja continuar.
-    
-    if(quantidade > 0) {
-        media = (float) soma / quantidade
-        printf("Media: %2.f", media);
+    int quantidade = 0, soma = 0;
+    float media;
+
+    do {
+
+        printf("Digite uma nota de 1 a 5: ");
+        scanf("%d", &nota);
+
+        if (nota >= 1 && nota <= 5) {
+            soma += nota;
+            quantidade++;
+        } else {
+            printf("NOTA INVALIDA\n");
+        }
+
+        printf("Deseja continuar? (1 = Sim / 0 = Nao): ");
+        scanf("%d", &continuar);
+
+    } while (continuar == 1);
+
+    if (quantidade > 0) {
+        media = (float) soma / quantidade;
+        printf("Media: %.2f\n", media);
     } else {
-        printf("Nenhuma nota valida registrada");
+        printf("Nenhuma nota valida registrada\n");
     }
 
     return 0;

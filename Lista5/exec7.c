@@ -1,18 +1,28 @@
-// Online C compiler to run C program online
 #include <stdio.h>
 
 int main() {
-    int i;
+
     float temperatura;
-    int seguras = 0, risco = 0
-    
-    // Implemente aqui um FOR para ler 12 temperaturas.
-    // Se temperatura <= 75, incremente seguras.
-    // Senao, incremente risco.
-    
-    printf("Leituras seguras: %d", seguras);
-    printf("Leituras de risco: %d", risco);
-    
+    int leiturasSeguras = 0;
+    int leiturasRisco = 0;
+
+    // Repetição para ler 12 temperaturas
+    for (int contador = 1; contador <= 12; contador++) {
+
+        printf("Digite a %dª temperatura: ", contador);
+        scanf("%f", &temperatura);
+
+        if (temperatura <= 75) {
+            leiturasSeguras++;
+        } else {
+            leiturasRisco++;
+        }
+    }
+
+    // Mostra o resultado final
+    printf("\nResultado das leituras:\n");
+    printf("Leituras seguras: %d\n", leiturasSeguras);
+    printf("Leituras de risco: %d\n", leiturasRisco);
 
     return 0;
 }
