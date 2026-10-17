@@ -1,0 +1,50 @@
+
+vendas = {
+    "Janeiro": 12500,
+    "Fevereiro": 9800,
+    "Março": 15300,
+    "Abril": 11700,
+    "Maio": 18400
+}
+
+# 1. Valor total vendido
+total = sum(vendas.values())
+
+# 2. Média mensal
+media = total / len(vendas)
+
+# 3. Mês com maior venda
+maior_mes = max(vendas, key=vendas.get)
+
+# 4. Mês com menor venda
+menor_mes = min(vendas, key=vendas.get)
+
+print(f"Total vendido: R$ {total:,.2f}".replace(",", "X").replace(".", ",").replace("X", "."))
+print(f"Média mensal: R$ {media:,.2f}".replace(",", "X").replace(".", ",").replace("X", "."))
+
+print(
+    f"Maior venda: {maior_mes} - R$ "
+    f"{vendas[maior_mes]:,.2f}".replace(",", "X").replace(".", ",").replace("X", ".")
+)
+
+print(
+    f"Menor venda: {menor_mes} - R$ "
+    f"{vendas[menor_mes]:,.2f}".replace(",", "X").replace(".", ",").replace("X", ".")
+)
+
+# 5. Meses com vendas acima da média
+print("\nMeses acima da média:")
+
+for mes, valor in vendas.items():
+    if valor > media:
+        print(mes)
+
+# Desafio adicional: dictionary comprehension
+acima_da_media = {
+    mes: valor
+    for mes, valor in vendas.items()
+    if valor > media
+}
+
+print("\nDicionário acima da média:")
+print(acima_da_media)
