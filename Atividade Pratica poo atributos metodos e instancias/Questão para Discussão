@@ -1,3 +1,3 @@
 Questão: Por que o aluguel de veiculo1 não altera o estado de veiculo2?
-R: Porque cada objeto possui seus próprios atributos e estados. O método alugar() utiliza o self para modificar somente o objeto que chamou o método. 
-Portanto, alugar um veículo não interfere nos demais objetos.
+R: Porque cada objeto tem seus próprios atributos e condições. O método alugar() usa o self para alterar apenas o objeto que invocou o método. 
+Logo, alugar um veículo não afeta os outros objetos.
