@@ -1,11 +1,11 @@
-1: veiculo1, veiculo2 e veiculo3 representam objetos diferentes?
-R: Sim. Cada variável representa uma instância independente da classe Veiculo.
+1: veiculo1, veiculo2 e veiculo3 são objetos distintos?
+R: Sim. Cada variável corresponde a uma instância distinta da classe Veiculo.
 
-2. Eles possuem os mesmos nomes de atributos?
-R: Sim. Todos possuem os atributos marca, modelo, ano, quilometragem e disponivel.
+2. Eles têm os mesmos nomes de atributos?
+R: Sim. Todos têm os atributos marca, modelo, ano, quilometragem e disponível.
 
-3. Os valores desses atributos precisam ser iguais?
-R: Não. Cada objeto pode possuir valores diferentes para seus atributos.
+3. Os valores desses atributos devem ser equivalentes?
+R: Não. Cada objeto pode ter valores distintos para seus atributos.
 
-4:O que acontece se apenas a quilometragem de veiculo1 for alterada?
-R:Somente a quilometragem de veiculo1 será modificada. Os outros veículos continuarão com seus valores originais.
+4: O que ocorre se somente a quilometragem do veículo1 for modificada?
+R: Apenas a quilometragem do veículo 1 será alterada. Os demais veículos manterão seus valores originais.
